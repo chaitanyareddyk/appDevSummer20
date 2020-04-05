@@ -1,0 +1,41 @@
+h1 {
+    color: red;
+}
+
+h3 {
+    color: green;
+}
+
+#bluePara {
+    background-color: grey;
+    color: blue;
+    border-radius: 0%;
+}
+
+body {
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+#orangeAkshay {
+    color: orange;
+}
+
+#para1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    background-color: cyan;
+}
+
+th {
+    background-color: brown;
+}
+
+#scrollingTextTharun {
+    font-family: "Times New Roman", Times, serif;
+    color: yellow;
+}
