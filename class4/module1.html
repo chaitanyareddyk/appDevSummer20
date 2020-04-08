@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Module 1</title>
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+        <h2>Change the below text with javascript:</h2>
+        <p id="changeMe"></p>
+
+
+        <button onclick="textChanger()">Change it!</button>
+
+
+        <script>
+            if(localStorage.getItem('didChange') == 'false'){
+                document.getElementById('changeMe').innerHTML= 'Change me, please?'
+            }
+            else {
+                document.getElementById('changeMe').innerHTML= 'Changing in html file'
+            }
+
+
+
+
+            function textChanger(){
+                if(localStorage.getItem('didChange') == "false"){
+                    var changeMeElement = document.getElementById('changeMe');
+                    changeMeElement.innerHTML = 'Changing in html file';
+                    localStorage.setItem('didChange', true);
+                }
+                else {
+                    var changeMeElement = document.getElementById('changeMe');
+                    changeMeElement.innerHTML = 'Change me, please?';
+                    localStorage.setItem('didChange', false);
+                }
+                   
+            }
+
+        </script>
+    </body>
+</html>
